@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body>
+    <!-- Responsive Navbar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <button id="menu-btn" class="md:hidden block border-none text-lg px-3 py-1 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+
+        <div id="mobile-menu"
+            class="md:hidden absolute top-full right-0 rounded-lg p-3 mt-1 shadow-md origin-top duration-200 transition-transform scale-y-0 bg-white w-full z-50 hidden">
+            <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+            <a href="./product.html" class="block px-4 py-2 hover:bg-gray-100">Products</a>
+            <a href="./contact.html" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+        </div>
+
+
+        <script>
+            const btn = document.getElementById('menu-btn');
+            const menu = document.getElementById('mobile-menu');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('scale-y-100');
+            });
+        </script>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Header Section -->
+    <div class="bg-green-100 p-4 flex justify-center">
+        <div>
+            <p class="mb-4">We offer you a wide rang of Artificial and Natural Plants</p>
+            <h2 class="text-3xl font-bold mb-5">Plants for your Interior</h2>
+            <div class="mb-5">
+                <button class="bg-black text-white p-2 rounded">Shop Now</button>
+                <button class="border border-black p-2 rounded">Watch Now</button>
+            </div>
+
+            <p class="mt-5">160+ Plants Species | 100+ Clients</p>
+
+
+        </div>
+
+
+
+        <div class="hidden md:block gap-5">
+            <img src="./Images/Header images 2.jpeg" alt="Header-image" class="w-80">
+
+        </div>
+
+
+
+    </div>
+
+    <!-- About Section -->
+    <div class="text-center">
+        <h1 class="text-3xl font-bold mt-5 ">About Us</h1>
+        <p>This site for those to Plant a garden is ro dream of tomorrow!!!</p>
+    </div>
+
+    <div class="text-center md:flex">
+        <div class="border border-black rounded p-2 m-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-20 inline">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+            </svg>
+
+            <h2 class="text-xl font-medium">Large assortment</h2>
+            <p>An assortment is a collection of different types of things, or a variety of similar items with different
+                qualities like size, color, or style. It can also refer to the act of classifying things into different
+                categories. For example, a store might have a wide assortment of vegetables, or a mixed assortment of
+                sweets</p>
+
+        </div>
+
+        <div class="border border-black rounded p-2 m-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-20 inline">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+            </svg>
+
+            <h2 class="text-xl font-medium">Business Practices</h2>
+            <p>Business practices are the methods, policies, and ethical guidelines companies use to operate, manage,
+                and interact with stakeholders. These can include core functions like marketing, finance, and supply
+                chain management, as well as employee relations, strategic planning, and customer service</p>
+
+        </div>
+
+        <div class="border border-black rounded p-2 m-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-20 inline">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+            </svg>
+
+            <h2 class="text-xl">Corporate Responsibility</h2>
+            <p>Corporate responsibility is a business model where companies act ethically and sustainably to benefit
+                society and the environment, not just their shareholders. It encompasses four main types: environmental,
+                ethical, and economic</p>
+
+        </div>
+
+
+    </div>
+
+    <!--Best Seller  -->
+    <div class="text-center p-4">
+        <h1 class="text-3xl font-bold">Best Seller</h1>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./Images/bestseller-1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Aquatic plant</p>
+                <p>$1000</p>
+            </div>
+
+            <div>
+                <img src="./Images/bestseller-2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Agapanthus plant</p>
+                <p>$1700</p>
+            </div>
+
+            <div>
+                <img src="./Images/bestseller-3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Climbers plant</p>
+                <p>$2200</p>
+            </div>
+
+            <div>
+                <img src="./Images/bestseller-4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Sunflower plant</p>
+                <p>$2500</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Customer Review -->
+    <div>
+        <h1 class="text-center text-3xl font-bold mt-5">Coustomer Review</h1>
+    </div>
+
+    <div class="p-6 gap-5 flex flex-col">
+        <div class="border border-black text-white bg-green-900 p-4">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Beatae aliquid voluptates eum esse distinctio harum minus quo, deleniti corporis similique illum!
+            Sapiente at possimus mollitia incidunt inventore aperiam quis voluptas.
+            <p class="text-yellow-300 font-bold">John Colter</p>
+        </div>
+        <div class="border border-black text-white bg-green-900 p-4">Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Consequuntur natus fugit iusto eum numquam ipsam repellendus deserunt quisquam eveniet, molestiae ipsa
+            est, aperiam quam a maiores blanditiis eaque suscipit error?
+            <p class="text-yellow-300 font-bold">Jim Bridger</p>
+        </div>
+        <div class="border border-black text-white bg-green-900 p-4">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Dignissimos a eligendi fuga nisi, iste vero qui! Tempore nesciunt repudiandae, obcaecati recusandae
+            libero facilis voluptatum ex id iste dolorum incidunt beatae.
+            <p class="text-yellow-300 font-bold">Joseph Walker</p>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!-- News Letter -->
+    <div class="text-center">
+        <h1 class="font-bold text-3xl mt-5">Join our News letter</h1>
+        <p>Sign up for our newsletter to receive the latest updates and offers.</p>
+        <input type="text" class="border border-black mt-3 p-3" style="width: 80%;">
+        <br>
+        <button class="bg-black text-yellow-300 p-2 m-4 underline rounded">Subscribe</button>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-green-100 p-10 ">
+        <div class="flex flex-col gap-5">
+            <h1 class="text-3xl font-bold ">Greenden</h1>
+            <p>"Greenden" can refer to several different entities, including a responsive website for sustainable
+                gardening products, a Belgian e-shop selling natural and organic items, a Scottish holiday lettings
+                company, and various Indian companies (Greenden Infotech Private Limited, Greenden Farming LLP, and
+                Greenden Media Private Limited). Therefore, the specific "Greenden" description depends on the context,
+                but the most prominent results describe a web development project for eco-friendly gardening and an
+                online shop for natural products. </p>
+            <p>@ 2025 Greenden.com</p>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

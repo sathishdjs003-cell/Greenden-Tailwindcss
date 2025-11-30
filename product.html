@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+    <!-- Product navbar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <button id="menu-btn" class="md:hidden block border-none text-lg px-3 py-1 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+
+        <div id="mobile-menu"
+            class="md:hidden absolute top-full right-0 rounded-lg p-3 mt-1 shadow-md origin-top duration-200 transition-transform scale-y-0 bg-white w-full z-50 hidden">
+            <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+            <a href="./product.html" class="block px-4 py-2 hover:bg-gray-100">Products</a>
+            <a href="./contact.html" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+        </div>
+
+
+        <script>
+            const btn = document.getElementById('menu-btn');
+            const menu = document.getElementById('mobile-menu');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('scale-y-100');
+            });
+        </script>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Our Products -->
+     <div class="text-center">
+        <h1 class="text-3xl font-bold mt-5">Our Products</h1>
+        <input text="type" placeholder="Search your Products" class="border border-black mt-3 p-3 text-black" style="width: 80%;">
+
+     </div>
+
+
+     <!--Plant img Section -->
+
+     <div class="text-center p-4">
+        <h1 class="text-3xl font-bold">Best Seller</h1>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./prod-1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Jade Plant Sapling Plants</p>
+                <p>$1200</p>
+            </div>
+
+            <div>
+                <img src="./prod-2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Vibrant Flowering Plants</p
+                <p>$2100</p>
+            </div>
+
+            <div>
+                <img src="./prod-3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Mini Succulent Garden Plants</p>
+                <p>$1360</p>
+            </div>
+
+            <div>
+                <img src="./prod-4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Gardenia Ananta Plants</p>
+                <p>$2432</p>
+            </div>
+
+            <div>
+                <img src="./prod-5.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Calathea Pinstripe Plants</p>
+                <p>$1000</p>
+            </div>
+
+            <div>
+                <img src="./prod-6.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Krishna Tulsi Plants</p>
+                <p>$1700</p>
+            </div>
+
+            <div>
+                <img src="./prod-7.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Jade Plant Sapling Plants</p>
+                <p>$2200</p>
+            </div>
+
+            <div>
+                <img src="./prod-8.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Philodendron Birkin</p>
+                <p>$2780</p>
+            </div>
+
+            <div>
+                <img src="./prod-9.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>UGAOO Peace Lily</p>
+                <p>$1400</p>
+            </div>
+
+            <div>
+                <img src="./prod-10.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Croton plant for home</p>
+                <p>$1380</p>
+            </div>
+
+            <div>
+                <img src="./prod-11.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>mini Succulent Garden Pack</p>
+                <p>$2280</p>
+            </div>
+
+            <div>
+                <img src="./prod-12.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Croton plants live</p>
+                <p>$2750</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="bg-green-100 p-10 ">
+        <div class="flex flex-col gap-5">
+            <h1 class="text-3xl font-bold ">Greenden</h1>
+            <p>"Greenden" can refer to several different entities, including a responsive website for sustainable
+                gardening products, a Belgian e-shop selling natural and organic items, a Scottish holiday lettings
+                company, and various Indian companies (Greenden Infotech Private Limited, Greenden Farming LLP, and
+                Greenden Media Private Limited). Therefore, the specific "Greenden" description depends on the context,
+                but the most prominent results describe a web development project for eco-friendly gardening and an
+                online shop for natural products. </p>
+            <p>@ 2025 Greenden.com</p>
+        </div>
+
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>
